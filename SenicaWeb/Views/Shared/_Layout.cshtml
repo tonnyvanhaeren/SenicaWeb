@@ -1,0 +1,92 @@
+﻿@inject SignInManager<AppUser> _signinManager;
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - SenicaWeb</title>
+    <link rel="stylesheet" href="~/lib/bootstrap-V53-united/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" /> 
+    <link rel="stylesheet" href="~/SenicaWeb.styles.css" asp-append-version="true" />    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+</head>
+<body>
+    <header>
+        <nav class="navbar bg-primary navbar-expand-lg fixed-top navbar-toggleable-lg border-bottom" data-bs-theme="dark">
+            <div class="container">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">SenicaWeb</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav">
+                        <li class="nav-item" is-active-route asp-controller="Home" asp-action="Index">
+                            <a class="nav-link"  asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item" is-active-route asp-controller="Teacher" asp-action="Index">
+                            <a class="nav-link" asp-controller="Teacher" asp-action="Index" is-active-route>Leraren</a>
+                        </li>
+                        <li class="nav-item" is-active-route asp-controller="Cursus" asp-action="Index">
+                            <a class="nav-link" asp-controller="Cursus" asp-action="Index" is-active-route>Cursussen</a>
+                        </li>
+                        <li class="nav-item" is-active-route asp-controller="Home" asp-action="Privacy">
+                            <a class="nav-link" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                        </li>
+                        @if (_signinManager.IsSignedIn(User) && User.IsInRole(Roles.ADMIN)) {
+                            <li class="nav-item" is-active-route asp-controller="Auth" asp-action="index">
+                               <a class="nav-link" asp-controller="auth" asp-action="Index" is-active-route>Users</a>
+                            </li>
+                            <li class="nav-item" is-active-route asp-controller="Role" asp-action="Index">
+                               <a class="nav-link" asp-controller="role" asp-action="Index" is-active-route>Roles</a>
+                            </li>
+                            <li class="nav-item" is-active-route asp-controller="Teacher" asp-action="Index">
+                               <a class="nav-link" asp-controller="role" asp-action="Teacher" is-active-route>Leraren</a>
+                            </li>
+                            <li class="nav-item" is-active-route asp-controller="Cursus" asp-action="Index">
+                               <a class="nav-link" asp-controller="Cursus" asp-action="Index" is-active-route>Cursussen</a>
+                            </li>
+                        }
+                    </ul>                   
+                    <ul class="navbar-nav">
+                        @if (_signinManager.IsSignedIn(User)) 
+                        {
+                            <li class="nav-item" is-active-route asp-controller="Account" asp-action="Logout">
+                                <a class="nav-link" asp-area="" asp-controller="Account" asp-action="Logout"><i class="bi bi-box-arrow-in-left"></i> Logout</a>
+                            </li>
+                            <li class="nav-item" is-active-route asp-controller="Auth" asp-action="Profiel">
+                                <a class="nav-link" asp-area="" asp-controller="Auth" asp-action="Profiel"><i class="bi bi-person-circle"></i> Profiel</a>
+                            </li>
+                        } else 
+                        {
+                            <li class="nav-item" is-active-route asp-controller="Auth" asp-action="Create">
+                                <a class="nav-link" asp-area="" asp-controller="Auth" asp-action="Create">Register</a>
+                            </li>                        
+                            <li class="nav-item" is-active-route asp-controller="Account" asp-action="Login">
+                                <a class="nav-link" asp-area="" asp-controller="Account" asp-action="Login"><i class="bi bi-box-arrow-in-right"></i> Login</a>
+                            </li>
+                        }
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pt-5">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2024 - SenicaWeb - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
