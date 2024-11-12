@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SenicaWeb")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+98b04e70c8c9ee50d366afb5418c298f85be99f0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+791378d8abd0939a488357d6949b0ebef9d906de")]
 [assembly: System.Reflection.AssemblyProductAttribute("SenicaWeb")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SenicaWeb")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

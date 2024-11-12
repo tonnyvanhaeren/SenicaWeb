@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "OBhJ0X+etIm9AVTFqkAwq/Co+XzDKpPUVcs0WO9K3K0=",
+  "Hash": "A40xxiR8vF62jjTUtTPGjZncuZwUdxqkIaUOJjVULV4=",
   "Source": "SenicaWeb",
   "BasePath": "_content/SenicaWeb",
   "Mode": "Default",
@@ -1157,25 +1157,6 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/LICENSE"
     },
     {
-      "Identity": "/Users/antoniusvanhaeren/Projects/SenicaWeb/SenicaWeb/wwwroot/lib/fotos/tonny foto.jpeg",
-      "SourceId": "SenicaWeb",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/antoniusvanhaeren/Projects/SenicaWeb/SenicaWeb/wwwroot/",
-      "BasePath": "_content/SenicaWeb",
-      "RelativePath": "lib/fotos/tonny foto.jpeg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/fotos/tonny foto.jpeg"
-    },
-    {
       "Identity": "/Users/antoniusvanhaeren/Projects/SenicaWeb/SenicaWeb/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "SourceId": "SenicaWeb",
       "SourceType": "Discovered",
@@ -1421,6 +1402,44 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/pictures/homepage.jpeg"
+    },
+    {
+      "Identity": "/Users/antoniusvanhaeren/Projects/SenicaWeb/SenicaWeb/wwwroot/pictures/professor.jpg",
+      "SourceId": "SenicaWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/antoniusvanhaeren/Projects/SenicaWeb/SenicaWeb/wwwroot/",
+      "BasePath": "_content/SenicaWeb",
+      "RelativePath": "pictures/professor.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/pictures/professor.jpg"
+    },
+    {
+      "Identity": "/Users/antoniusvanhaeren/Projects/SenicaWeb/SenicaWeb/wwwroot/pictures/tonny.jpeg",
+      "SourceId": "SenicaWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/antoniusvanhaeren/Projects/SenicaWeb/SenicaWeb/wwwroot/",
+      "BasePath": "_content/SenicaWeb",
+      "RelativePath": "pictures/tonny.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/pictures/tonny.jpeg"
     }
   ]
 }

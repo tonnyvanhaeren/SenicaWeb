@@ -1,15 +1,13 @@
-using System;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
 using SenicaWeb.Data;
 using SenicaWeb.IdentityPolicy;
 using SenicaWeb.Models;
 
 namespace SenicaWeb.Extensions;
 
-public static class ServiceRegistratonExtension
+public static class ServiceRegistrationExtension
 {
     public static IServiceCollection AddConfigSqlContext(this IServiceCollection services, IConfiguration config)
     {
@@ -17,7 +15,7 @@ public static class ServiceRegistratonExtension
 
         var sqlConBuilder = new SqlConnectionStringBuilder
         {
-            ConnectionString = config["SqlServer:ConnectionString"],
+            ConnectionString = config["SqlServer:ConnectionString"]!,
             TrustServerCertificate = true,
             UserID = config["SqlServer:User"],
             Password = config["SqlServer:Password"],
@@ -72,4 +70,9 @@ public static class ServiceRegistratonExtension
         return services;
     }
 
+    public static IServiceCollection AddDbContextServices(this ServiceCollection services)
+    {
+        return services;
+    }
+    
 }

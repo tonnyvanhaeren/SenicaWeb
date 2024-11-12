@@ -20,4 +20,11 @@
     <Folder Include="wwwroot/lib/fotos/" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Update="Pictures\homepage.jpeg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
 </Project>

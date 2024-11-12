@@ -140,3 +140,4 @@
 /Users/antoniusvanhaeren/Projects/SenicaWeb/SenicaWeb/obj/Debug/net8.0/SenicaWeb.pdb
 /Users/antoniusvanhaeren/Projects/SenicaWeb/SenicaWeb/obj/Debug/net8.0/SenicaWeb.genruntimeconfig.cache
 /Users/antoniusvanhaeren/Projects/SenicaWeb/SenicaWeb/obj/Debug/net8.0/ref/SenicaWeb.dll
+/Users/antoniusvanhaeren/Projects/SenicaWeb/SenicaWeb/obj/Debug/net8.0/SenicaWeb.sourcelink.json

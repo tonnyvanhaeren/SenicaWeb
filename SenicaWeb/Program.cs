@@ -1,5 +1,4 @@
-using Microsoft.EntityFrameworkCore;
-using SenicaWeb.Data;
+using Microsoft.Extensions.FileProviders;
 using SenicaWeb.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -22,6 +21,8 @@ if (!app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+// Configureren van map buiten de webroot
+
 app.UseStaticFiles();
 
 app.UseRouting();

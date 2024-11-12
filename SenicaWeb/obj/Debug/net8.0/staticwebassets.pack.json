@@ -237,10 +237,6 @@
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.min.js.map"
     },
     {
-      "Id": "/Users/antoniusvanhaeren/Projects/SenicaWeb/SenicaWeb/wwwroot/lib/fotos/tonny foto.jpeg",
-      "PackagePath": "staticwebassets/lib/fotos/tonny foto.jpeg"
-    },
-    {
       "Id": "/Users/antoniusvanhaeren/Projects/SenicaWeb/SenicaWeb/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt",
       "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/LICENSE.txt"
     },
@@ -291,6 +287,14 @@
     {
       "Id": "/Users/antoniusvanhaeren/Projects/SenicaWeb/SenicaWeb/wwwroot/pictures/homepage.jpeg",
       "PackagePath": "staticwebassets/pictures/homepage.jpeg"
+    },
+    {
+      "Id": "/Users/antoniusvanhaeren/Projects/SenicaWeb/SenicaWeb/wwwroot/pictures/professor.jpg",
+      "PackagePath": "staticwebassets/pictures/professor.jpg"
+    },
+    {
+      "Id": "/Users/antoniusvanhaeren/Projects/SenicaWeb/SenicaWeb/wwwroot/pictures/tonny.jpeg",
+      "PackagePath": "staticwebassets/pictures/tonny.jpeg"
     },
     {
       "Id": "obj/Debug/net8.0/staticwebassets/msbuild.SenicaWeb.Microsoft.AspNetCore.StaticWebAssets.props",

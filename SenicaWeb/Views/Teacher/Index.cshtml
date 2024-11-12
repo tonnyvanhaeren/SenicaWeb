@@ -1,55 +1,53 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@model IEnumerable<SenicaWeb.Models.Teacher>
 @{
 }
-
-<div class="row mt-4">
-    <div class="text-body-secondary">
-        <a asp-action="Create" asp-controller="Teacher" class="btn btn-primary">Add Teacher</a>
-        <a asp-action="Index" asp-controller="Home" class="btn btn-success">Home</a>
-    </div> 
-    <div class="card-group mt-4">
-        <div class="card">
-            <img src="~/lib/fotos/tonny foto.jpeg" class="card-img-top img-thumbnail" alt="foto tonny">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">An item</li>
-                <li class="list-group-item">A second item</li>
-                <li class="list-group-item">A third item</li>
-            </ul>
-            <div class="card-body">
-                <a href="#" class="card-link">Card link</a>
-                <a href="#" class="card-link">Another link</a>
-            </div>            
-            <div class="card-footer">
-                <small class="text-body-secondary">Last updated 3 mins ago</small>
-            </div>
-        </div>
-        <div class="card">
-            <img src="~/lib/fotos/tonny foto.jpeg" class="card-img-top" alt="foto tonny">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-            </div>
-            <div class="card-footer">
-                <small class="text-body-secondary">Last updated 3 mins ago</small>
-            </div>
-        </div>
-        <div class="card">
-            <img src="~/lib/fotos/tonny foto.jpeg" class="card-img-top" alt="foto tonny">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-            </div>
-            <div class="card-footer">
-            <small class="text-body-secondary">Last updated 3 mins ago</small>
-            </div>
+<div class="container">
+    <div class="row mt-4">
+        <div class="text-body-secondary">
+            <a asp-action="Create" asp-controller="Teacher" class="btn btn-primary">Add Teacher</a>
+            <a asp-action="Index" asp-controller="Home" class="btn btn-success">Home</a>
         </div>
     </div>
 
+    <div class="row mt-4">
 
+            @foreach (var item in Model)
+            {
+                <div class="col-md-4">
+
+                    <div class="card">
+                        <img src="~/pictures/tonny.jpeg" class="card-img-top img-thumbnail" alt="foto tonny">
+                        <div class="card-body text-bg-info">
+                            <h5 class="card-title ">@Html.DisplayFor(modelItem =>  item.Voornaam) - @Html.DisplayFor(modelItem => item.Familienaam)</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item text-bg-primary">@Html.DisplayFor(modelItem => item.Email)</li>
+                            <li class="list-group-item">@Html.DisplayFor(modelItem => item.GsmNr)</li>
+                            <li class="list-group-item">A third item</li>
+                        </ul>
+                        <div class="card-body">
+                            <a href="#" class="card-link">Card link</a>
+                            <a href="#" class="card-link">Another link</a>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-body-secondary">Last updated 3 mins ago</small>
+                        </div>
+                    </div>
+                </div>
+            }   
+            
+            
+            
+            
+            
+       
+</div>
+
+<div class="card-group mt-4">
+
+
+
+
+    </div>
 </div>
