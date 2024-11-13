@@ -16,19 +16,17 @@
                 <div class="col-md-4">
 
                     <div class="card">
-                        <img src="~/pictures/tonny.jpeg" class="card-img-top img-thumbnail" alt="foto tonny">
-                        <div class="card-body text-bg-info">
-                            <h5 class="card-title ">@Html.DisplayFor(modelItem =>  item.Voornaam) - @Html.DisplayFor(modelItem => item.Familienaam)</h5>
+                        <img src="~/pictures/@item.FotoUrl" class="card-img-top img-thumbnail" alt="foto @item.FotoUrl">
+                        <div class="card-body">
+                            <h5 class="card-title text-capitalize text-primary">@Html.DisplayFor(modelItem =>  item.Voornaam) - @Html.DisplayFor(modelItem => item.Familienaam)</h5>
                             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                         </div>
                         <ul class="list-group list-group-flush">
-                            <li class="list-group-item text-bg-primary">@Html.DisplayFor(modelItem => item.Email)</li>
-                            <li class="list-group-item">@Html.DisplayFor(modelItem => item.GsmNr)</li>
-                            <li class="list-group-item">A third item</li>
+                            <li class="list-group-item text-info"><i class="bi bi-envelope"></i> @Html.DisplayFor(modelItem => item.Email)</li>
+                            <li class="list-group-item text-info"><i class="bi bi-telephone"></i> @Html.DisplayFor(modelItem => item.GsmNr)</li>
                         </ul>
                         <div class="card-body">
-                            <a href="#" class="card-link">Card link</a>
-                            <a href="#" class="card-link">Another link</a>
+                            <a href="#" class="card-link"><i class="bi bi-link"></i> Lessenrooster</a>
                         </div>
                         <div class="card-footer">
                             <small class="text-body-secondary">Last updated 3 mins ago</small>
